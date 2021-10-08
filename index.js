@@ -208,16 +208,18 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
+artists[0].name = "Amedeo Modigliani";
+console.log(artists);
 
 //(2) Bio of the third artist (2nd index) in the array 
-
-
+artists[2].bio = "Diego María de la Concepción Juan Nepomuceno Estanislao de la Rivera y Barrientos Acosta y Rodríguez, known as Diego Rivera (Spanish pronunciation: [ˈdjeɣo riˈβeɾa]; December 8, 1886 – November 24, 1957) was a prominent Mexican painter. His large frescoes helped establish the Mexican mural movement in Mexican art. Between 1922 and 1953, Rivera painted murals in, among other places, Mexico City, Chapingo, Cuernavaca, San Francisco, Detroit, and New York City. In 1931, a retrospective exhibition of his works was held at the Museum of Modern Art in New York. Rivera had a volatile marriage with fellow Mexican artist Frida Kahlo.";
+console.log(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
-
+artists[8].name = 'Vincent Van Gogh';
+console.log(artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -247,7 +249,8 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(na) {
   let narray = [];
   for (let i = 0; i < artists.length; i++){
-    if(na.length === 'years' && na.length >= 1900 && na.length <= 2000){
+    if(artists[i].length === 'years' && artists[i].length >= 1900 && artists[i].length <= 2000){
+     artists[i].length === 'years';
       return 'name'
     }
   }
@@ -318,9 +321,10 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(array) {
   for(let i = 0; i < array.length; i++){
-    if(array[i] === "paintings" && "paintings" >= 100);
+    if(array[i] === "paintings" && "paintings" > 100);
+    array[i].push
   }
-  return array;
+  return ;
 }
 
 
