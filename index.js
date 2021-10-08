@@ -247,7 +247,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(na) {
   let narray = [];
   for (let i = 0; i < artists.length; i++){
-    if(na === 1900 && na === 2000){
+    if(na.length === 'years' && na.length >= 1900 && na.length <= 2000){
       return 'name'
     }
   }
