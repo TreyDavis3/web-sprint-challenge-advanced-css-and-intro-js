@@ -228,8 +228,9 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array, i) {
+  return `the artist at index ${i} is ${array[i].name}`
+  
 }
 
 
@@ -243,9 +244,16 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s(na) {
+  let narray = [];
+  for (let i = 0; i < artists.length; i++){
+    if(na === 1900 && na === 2000){
+      return 'name'
+    }
+  }
+  return narray;
 }
+
 
 
 
@@ -258,8 +266,15 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(na, num) {
+  let i;
+  for (i = 0; i < na.length; i++){
+    if(na === num){
+      break;
+    }
+  }
+  na.splice(i,1);
+return na;
 }
 
 
@@ -279,8 +294,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  
+  array.push({ 
+    'id': 20,
+    'name': 'Trey', 
+    'years': '2002-2020',
+    'genre': 'Web Design', 
+    'nationality': 'American',
+    'bio': "I'm really cool and what not",
+  })
+  return array;
 }
 
 
@@ -292,8 +316,11 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  for(let i = 0; i < array.length; i++){
+    if(array[i] === "paintings" && "paintings" >= 100);
+  }
+  return array;
 }
 
 
